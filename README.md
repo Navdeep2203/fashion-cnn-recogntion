@@ -151,13 +151,37 @@ Possible extensions for this project include:
 - Applying data augmentation techniques  
 - Deploying the model using a web application (Streamlit or Flask)
 
+# 🎥 Real-Time Prediction with OpenCV
+
+The trained CNN model was integrated with **OpenCV** to enable **real-time clothing classification using webcam input**.
+
+Pipeline:
+Webcam → OpenCV Frame Capture → Image Preprocessing → CNN Model → Prediction Display
+
+
+Steps performed in real-time:
+
+1. Capture webcam frames using OpenCV
+2. Convert frames to grayscale
+3. Resize images to **28 × 28 pixels**
+4. Normalize pixel values
+5. Feed processed image into the trained CNN model
+6. Display predicted clothing category on the video stream
+
+Press **Q** to exit the webcam prediction window.
+
+
+# 🛠 Technologies Used
+
+- Python  
+- PyTorch  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- OpenCV  
+
 ---
 
-# 👤 Author
 
-**Navdeep Singh**  
-CSE Student — MIT Manipal  
-
-GitHub:  
 
 
